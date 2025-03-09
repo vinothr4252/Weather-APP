@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-800 flex  items-center justify-center  h-screen"> 
+    <div class=" bg-gray-900  px-4 py-2  rounded-lg ">
+          <h1 class="text-white text-2xl font-bold flex m-2 px-4 py-2 justify-center">Weather</h1>
+          <div class="flex m-4 ">
+          <input id="input-text" placeholder="City Name" class="focus:outline-none font-semibold hover:ring-0-none rounded-lg px-2 py-3 mr-4" type="text">
+          <button id="weather-btn" class="bg-red-800 rounded-lg px-3 py-3 hover:bg-red-600  text-white font-semibold ">Get Weather</button>
+        </div>
+        <div class="text-white px-5 py-1 clss" id="weather-info">
+            <h2 class="mt-1 text-[18px] justify-center text-orange-500  flex px-2 py-1 text-xl font-bold" id="cityname"> </h2>
+            <h2 class="mt-1 text-[18px] justify-center  flex px-2 py-1 font-semibold" id="temp"> </h2>  
+            <h2 class="mt-1 text-[15px] justify-center flex px-2 py-1 " id="Description"> </h2>
+        </div>
+        <p class=" text-white clss text-[15px] px-5 justify-center  items-center px-2 py-2" id="error-msg">City not found, Please try again .</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
